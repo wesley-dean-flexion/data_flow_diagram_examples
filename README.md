@@ -37,12 +37,20 @@ Graphviz has been around since "before 1991" and is often used in
 conjunction with other tools that produce DOT-formatted output.
 
 * [Sample DOT file](graphviz_dot/example.dot)
-* [Sample output](graphviz_dot/example.png)
+* [Sample PNG output](graphviz_dot/example.png)
+* [Sample SVG output](graphviz_dot/example.svg)
 
-#### To run Graphviz locally
+#### Using Graphviz locally
 
 ```shell
-# dot example.dot -o example.png -Tpng
+# To install (Debian / Ubuntu):
+sudo apt-get update && apt-get install -y graphivz
+
+# To render as a PNG image:
+dot example.dot -o example.png -Tpng
+
+# To render as an SVG image:
+dot example.dot -o example.svg -Tsvg
 ```
 
 ### Mermaid
@@ -53,10 +61,18 @@ Mermaid so no additional step is required to build an image
 from the diagram's source.
 
 * [Sample Mermaid file](mermaid/example.mermaid)
-* [Sample output](mermaid/example.png)
+* [Sample PNG output](mermaid/example.png)
+* [Sample SVG output](mermaid/example.png)
 
-#### To run Mermaid locally
+#### Using Mermaid locally
 
 ```shell
-# mmdc -i example.mermaid -o example.png
+# To install:
+npm install --global @mermaid-js/mermaid-cli
+
+# To render as a PNG image:
+mmdc -i example.mermaid -o example.png
+
+# To render as an SVG image:
+mmdc -i example.mermaid -o example.svg
 ```
