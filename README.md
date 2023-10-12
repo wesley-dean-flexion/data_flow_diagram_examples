@@ -53,6 +53,17 @@ dot example.dot -o example.png -Tpng
 dot example.dot -o example.svg -Tsvg
 ```
 
+#### Using Graphviz as a GitHub Action
+
+It's possible to use Graphviz to automatically render DOT files as
+images through the use of a GitHub Action.  The Action looks for
+`.dot` files and, when it finds them, renders the into images.
+
+Here is a sample that generates PNG and SVG files from any
+`.dot` file found in the repository:
+
+* [render_dot.yml](.github/workflows/render_dot.yml)
+
 ### Mermaid
 
 Mermaid is a more recent tool built in JavaScript.  A significant

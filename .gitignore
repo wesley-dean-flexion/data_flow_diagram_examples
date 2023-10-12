@@ -1,0 +1,9 @@
+*~
+venv/
+.brown_rotary_phone.bash
+brown_rotary_phone.yml
+megalinter-reports/
+reports/
+.scannerwork
+.travis.yml
+node_modules
