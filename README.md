@@ -37,8 +37,8 @@ Graphviz has been around since "before 1991" and is often used in
 conjunction with other tools that produce DOT-formatted output.
 
 * [Sample DOT file](graphviz_dot/example.dot)
-* [Sample PNG output](graphviz_dot/example.png)
-* [Sample SVG output](graphviz_dot/example.svg)
+* [Sample PNG output](graphviz_dot/example.dot.png)
+* [Sample SVG output](graphviz_dot/example.dot.svg)
 
 #### Using Graphviz locally
 
