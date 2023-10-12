@@ -1,6 +1,6 @@
 ---
 
-name: Render Graphviz DOT files as PNGs
+name: Render Graphviz DOT files as PNG and SVG images
 
 # yamllint disable-line rule:truthy
 on:
@@ -21,10 +21,10 @@ jobs:
         uses: ts-graphviz/setup-graphviz@v1
 
       - name: render PNG images
-        run: find . -iname "*.dot" -exec dot {} -O -Tpng \;
+        run: find . -name "*.dot" -exec dot {} -O -Tpng \;
 
       - name: render SVG images
-        run: find . -iname "*.dot" -exec dot {} -O -Tsvg \;
+        run: find . -name "*.dot" -exec dot {} -O -Tsvg \;
 
       - name: Create commit with changes
         uses: stefanzweifel/git-auto-commit-action@v5
