@@ -60,9 +60,11 @@ advantage is that GitHub supports the automated rendering of
 Mermaid so no additional step is required to build an image
 from the diagram's source.
 
-* [Sample Mermaid file](mermaid/example.mermaid)  (Thanks to @tdonaworth)
+* [Sample Mermaid file](mermaid/example.mermaid)
 * [Sample PNG output](mermaid/example.png)
 * [Sample SVG output](mermaid/example.png)
+
+Thanks to [Tim Donaworth](https://github.com/tdonaworth) for the example!
 
 #### Using Mermaid locally
 
