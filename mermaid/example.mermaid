@@ -1,0 +1,26 @@
+flowchart LR
+  classDef external fill:#5b9bd5,color:#FFF
+  classDef data fill:#ffc000,color:#000
+  classDef processes fill:#70ad47,color:#000
+
+  User[User]:::external
+  Web[Web Browser]:::external
+  Internet[Internet Traffic]:::external
+  Cloud[Cloud Server]:::external
+  Gateway[Internet Gateway]:::external
+  Billing(Billing Dashboard):::processes
+  S3[S3 Storage]:::data
+  EC2[EC2 Instance]:::data
+  RDS[MongoDB]:::data
+
+  User-->Web
+  Internet-->Web
+  Web-->Cloud
+  Cloud-->Gateway
+
+  subgraph "Trust Boundary"
+    Gateway---Billing
+    Gateway---S3
+    Gateway---EC2
+    Gateway---RDS
+  end

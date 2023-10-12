@@ -1,0 +1,49 @@
+digraph {
+
+  rankdir=LR;
+
+  // Define nodes
+  user [label="User"];
+  browser [label="Web Browser"];
+  traffic [label="Internet Traffic"];
+  server [label="Cloud Server"];
+  gateway [label="Internet Gateway"];
+  mongodb [label="MongoDB"];
+  ec2instances [label="EC2 Instances"];
+  s3storage [label="S3 Storage"];
+  dashboard [label="Billing Dashboard"];
+
+
+  // Stylize nodes
+  //   External interactors
+  user, browser, traffic, server, gateway [shape=box, fillcolor="#5b9bd5", style=filled, fontcolor=white, fontname=sans];
+  //   Data stores
+  mongodb, ec2instances, s3storage [shape=box, fillcolor="#ffc000", style=filled, fontcolor=black, fontname=sans];
+  //   Processes
+  dashboard [shape=oval, fillcolor="#70ad47", style=filled, fontcolor=black, fontname=sans];
+
+
+  // Add edges
+  user -> browser;
+  browser -> server
+  server -> browser;
+  traffic -> browser;
+
+  server -> gateway;
+
+  gateway -> mongodb[dir=none];
+  gateway -> ec2instances[dir=none];
+  gateway -> s3storage[dir=none];
+  gateway -> dashboard[dir=none];
+
+
+  // Cluster (group) nodes
+  subgraph cluster2 {
+    style=dashed;
+    gateway;
+    mongodb;
+    ec2instances;
+    dashboard;
+    s3storage;
+  }
+}
