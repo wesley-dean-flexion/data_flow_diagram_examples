@@ -29,3 +29,4 @@ jobs:
         with:
           commit_message: "[Generate diagrams]"
           file_pattern: '*.dot.png *.dot.svg'
+          token: ${{ secrets.PAT }}
