@@ -4,14 +4,14 @@ digraph {
 
   // Define nodes
   user [label="User"];
-  browser [label="Web Browser", label="Web Browser"];
-  traffic [label="Internet Traffic", label="Internet Traffic"];
-  server [label="Cloud Server", label="Cloud Server"];
-  gateway [label="Internet Gateway", label="Internet Gateway"];
-  mongodb [label="MongoDB", label="MongoDB"];
-  ec2instances [label="EC2 Instances", label="EC2 Instances"];
-  s3storage [label="S3 Storage", label="S3 Storage"];
-  dashboard [label="Billing Dashboard", label="Billing Dashboard"];
+  browser [label="Web Browser", tooltip="Web Browser"];
+  traffic [label="Internet Traffic", tooltip="Internet Traffic"];
+  server [label="Cloud Server", tooltip="Cloud Server"];
+  gateway [label="Internet Gateway", tooltip="Internet Gateway"];
+  mongodb [label="MongoDB", tooltip="MongoDB"];
+  ec2instances [label="EC2 Instances", tooltip="EC2 Instances"];
+  s3storage [label="S3 Storage", tooltip="S3 Storage"];
+  dashboard [label="Billing Dashboard", tooltip="Billing Dashboard"];
 
 
   // Stylize nodes
@@ -40,7 +40,7 @@ digraph {
   // Cluster (group) nodes
   subgraph cluster2 {
     style=dashed;
-    lable="Security Boundary";
+    tooltip="Security Boundary";
     gateway;
     mongodb;
     ec2instances;
