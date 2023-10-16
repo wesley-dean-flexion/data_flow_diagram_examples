@@ -11,7 +11,10 @@
 <polygon fill="white" stroke="transparent" points="-4,4 -4,-234 812.68,-234 812.68,4 -4,4"/>
 <g id="clust1" class="cluster">
 <title>cluster2</title>
+<g id="a_clust1"><a xlink:title="Security Boundary">
 <polygon fill="none" stroke="black" stroke-dasharray="5,2" points="432,-8 432,-222 800.68,-222 800.68,-8 432,-8"/>
+</a>
+</g>
 </g>
 <!-- user -->
 <g id="node1" class="node">
@@ -22,8 +25,11 @@
 <!-- browser -->
 <g id="node2" class="node">
 <title>browser</title>
+<g id="a_node2"><a xlink:title="Web Browser">
 <polygon fill="#5b9bd5" stroke="black" points="261,-133 154,-133 154,-97 261,-97 261,-133"/>
 <text text-anchor="middle" x="207.5" y="-111.3" font-family="sans" font-size="14.00" fill="white">Web Browser</text>
+</a>
+</g>
 </g>
 <!-- user&#45;&gt;browser -->
 <g id="edge1" class="edge">
@@ -34,8 +40,11 @@
 <!-- server -->
 <g id="node4" class="node">
 <title>server</title>
+<g id="a_node4"><a xlink:title="Cloud Server">
 <polygon fill="#5b9bd5" stroke="black" points="404,-133 297,-133 297,-97 404,-97 404,-133"/>
 <text text-anchor="middle" x="350.5" y="-111.3" font-family="sans" font-size="14.00" fill="white">Cloud Server</text>
+</a>
+</g>
 </g>
 <!-- browser&#45;&gt;server -->
 <g id="edge2" class="edge">
@@ -46,8 +55,11 @@
 <!-- traffic -->
 <g id="node3" class="node">
 <title>traffic</title>
+<g id="a_node3"><a xlink:title="Internet Traffic">
 <polygon fill="#5b9bd5" stroke="black" points="118,-106 0,-106 0,-70 118,-70 118,-106"/>
 <text text-anchor="middle" x="59" y="-84.3" font-family="sans" font-size="14.00" fill="white">Internet Traffic</text>
+</a>
+</g>
 </g>
 <!-- traffic&#45;&gt;browser -->
 <g id="edge4" class="edge">
@@ -64,8 +76,11 @@
 <!-- gateway -->
 <g id="node5" class="node">
 <title>gateway</title>
+<g id="a_node5"><a xlink:title="Internet Gateway">
 <polygon fill="#5b9bd5" stroke="black" points="576,-133 440,-133 440,-97 576,-97 576,-133"/>
 <text text-anchor="middle" x="508" y="-111.3" font-family="sans" font-size="14.00" fill="white">Internet Gateway</text>
+</a>
+</g>
 </g>
 <!-- server&#45;&gt;gateway -->
 <g id="edge5" class="edge">
@@ -76,8 +91,11 @@
 <!-- mongodb -->
 <g id="node6" class="node">
 <title>mongodb</title>
+<g id="a_node6"><a xlink:title="MongoDB">
 <polygon fill="#ffc000" stroke="black" points="743.84,-52 660.84,-52 660.84,-16 743.84,-16 743.84,-52"/>
 <text text-anchor="middle" x="702.34" y="-30.3" font-family="sans" font-size="14.00">MongoDB</text>
+</a>
+</g>
 </g>
 <!-- gateway&#45;&gt;mongodb -->
 <g id="edge6" class="edge">
@@ -87,8 +105,11 @@
 <!-- ec2instances -->
 <g id="node7" class="node">
 <title>ec2instances</title>
+<g id="a_node7"><a xlink:title="EC2 Instances">
 <polygon fill="#ffc000" stroke="black" points="760.34,-106 644.34,-106 644.34,-70 760.34,-70 760.34,-106"/>
 <text text-anchor="middle" x="702.34" y="-84.3" font-family="sans" font-size="14.00">EC2 Instances</text>
+</a>
+</g>
 </g>
 <!-- gateway&#45;&gt;ec2instances -->
 <g id="edge7" class="edge">
@@ -98,8 +119,11 @@
 <!-- s3storage -->
 <g id="node8" class="node">
 <title>s3storage</title>
+<g id="a_node8"><a xlink:title="S3 Storage">
 <polygon fill="#ffc000" stroke="black" points="748.84,-160 655.84,-160 655.84,-124 748.84,-124 748.84,-160"/>
 <text text-anchor="middle" x="702.34" y="-138.3" font-family="sans" font-size="14.00">S3 Storage</text>
+</a>
+</g>
 </g>
 <!-- gateway&#45;&gt;s3storage -->
 <g id="edge8" class="edge">
@@ -109,8 +133,11 @@
 <!-- dashboard -->
 <g id="node9" class="node">
 <title>dashboard</title>
+<g id="a_node9"><a xlink:title="Billing Dashboard">
 <ellipse fill="#70ad47" stroke="black" cx="702.34" cy="-196" rx="90.18" ry="18"/>
 <text text-anchor="middle" x="702.34" y="-192.3" font-family="sans" font-size="14.00">Billing Dashboard</text>
+</a>
+</g>
 </g>
 <!-- gateway&#45;&gt;dashboard -->
 <g id="edge9" class="edge">
